@@ -1,43 +1,31 @@
-## <<Project Name>>
+## Nookal Tech Exam
 
 ### Installation 
 
-Install laravel composer
-```
-composer install
-```
-<img src="./myimage.jpg">
-Install npm modules
-```
-npm install
-```
+Run through browser
 
-Create `.env`
+### Project Description/Task
+Given a sorted array of integers, sort the array alternatively so that the array alternates max and min variables, so
+max variable, then min variable, then second max, and second min, and so on
+Example:
 
-```
-cp .env.example .env
-```
-
-
-### Additional Front-end work
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+output: [10, 1, 9, 2, 8, 3, 7, 4, 6, 5]
+ 
+Notes:
+1. For this test try to ensure that a space complexity of O(1) is maintained
+2. $array will be of minimum length 3, max length 20
 
 ### How to use
-Once both node and php servers are running - navigate to the url: http://127.0.0.1:8000/
-1. A dropdown meny should appear with a empty table set.
-2. Select a city and the corresponding weather forecast should appear.
+1. Save file to a local sever - suggest wamp or lamp
+2. open the script and see desired results
 
 ### Design/ Decisions made
-1. Added code to the app.js for react capability by create a parent and child class relationship. Maybe in future break this down further, build units and follow the framework.
-2. Currently only log errors in console - might be a better way to handle this expecially for API issues.
-3. Attempted to use tailwind but was not sure how far to go with css. Might need to add more to the dropdown in future.
-4. Should have seperated the fetch out of the component so it could be re-used through out code.
-5. Components are very specific - would have like to make them more generic and re-usable.
-6. Noticed the format of the table data is different to my format. Will need to make this consisant with design.
+1. Investigated possible solutions that retained the O(1) performance bracket. It was found array pop can be used for this purpose.
+2. Thought of ways to check complexity issues - future enhancement would be using php library phploc.
+3. Would have like to use php unit test cases in addition - but needed to limit time spend on project.
+4. Assumed user validation if other values were provided in array - these would be ignored and removed.
 
-### Limitations/issues
-1. Have hardcoded list of Australian cities for demonstrate
-2. A bug was found where the user needs to select a city a second time to trigger data in to display
-3. 2 classes were coded in 1 file - prefer to seperate these.
 
 
 
