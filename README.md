@@ -22,9 +22,10 @@ Notes:
 
 ### Design/ Decisions made
 1. Investigated possible solutions that retained the O(1) performance bracket. It was found array pop can be used for this purpose.
-2. Thought of ways to check complexity issues - future enhancement would be using php library phploc.
+2. Thought of ways to check complexity issues - future enhancement would be using php library phploc and performed report to ensure performance.
 3. Would have like to use php unit test cases in addition - but needed to limit time spend on project.
 4. Assumed user validation if other values were provided in array - these would be ignored and removed.
+5. Would have liked to have a composer and group this under a namespace to allow more array functions.
 
 ###Conditions tested
 1. [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
