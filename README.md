@@ -26,6 +26,10 @@ Notes:
 3. Would have like to use php unit test cases in addition - but needed to limit time spend on project.
 4. Assumed user validation if other values were provided in array - these would be ignored and removed.
 
+###Conditions tested
+1. [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2. [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+3. [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '3']
 
 
 
