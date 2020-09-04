@@ -8,13 +8,12 @@
 	
 	class AlternateSort{
 
-
 		private $givenArray;
 
 		public function __construct(array $givenArray)
 		{
 			// remove any no integer values from array
-			$givenArray = array_filter($givenArray, 'is_int');
+			$givenArray = array_filter( $givenArray, 'is_int' );
 			
 			//sort array if not sorted already
 			sort($givenArray);
@@ -47,7 +46,6 @@
 			
 		}
 		
-
 		/**
 		 * AlternateSort executor.
 		 *
@@ -81,5 +79,7 @@
 	}
 	
 	$obj = new AlternateSort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+	
 	$result = $obj->run();
+	
 	var_dump($result);
